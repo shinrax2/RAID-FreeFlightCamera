@@ -53,6 +53,11 @@ end
 
 function FreeFlightCameraMenu:allow_client_freecam(value)
     FreeFlightCamera.settings.allow_client_freecam = value
+
+    -- clients only learn about this on join otherwise
+    if FreeFlightCamera.Sync then
+        FreeFlightCamera.Sync:send_state()
+    end
 end
 
 function FreeFlightCameraMenu:announce_freecam_possible(value)

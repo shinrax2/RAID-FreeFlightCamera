@@ -19,7 +19,7 @@
     <hooks>
         <post hook_id="lib/setups/gamesetup" script_path="lua/CameraBase.lua" />
         <post hook_id="lib/setups/menusetup" script_path="lua/CameraBase.lua" />
-        <post hook_id="lib/network/base/networkpeer" script_path="lua/NetworkPeer.lua" />
+        <post hook_id="lib/network/base/basenetworksession" script_path="lua/NetworkSync.lua" />
         <post hook_id="lib/managers/menu/menucomponentmanager" script_path="lua/MenuComponentManager.lua" />
     </hooks>
 
