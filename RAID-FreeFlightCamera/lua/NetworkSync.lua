@@ -10,9 +10,9 @@
 local network_id = "FreeFlyCameraSync"
 local PROTOCOL = 1
 
-FreeFlightCamera.Sync = FreeFlightCamera.Sync or {}
+FreeFlightCameraSync = FreeFlightCameraSync or {}
 
-local Sync = FreeFlightCamera.Sync
+local Sync = FreeFlightCameraSync
 
 local function host_peer_id()
     local session = managers.network and managers.network:session()
